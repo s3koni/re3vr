@@ -1,0 +1,236 @@
+/* Elements that control the dark & light modes exist below */
+.lightmode,
+.lightmode container,
+.lightmode footer {
+  background-color: white;
+  color: black;
+}
+
+.darkmode,
+.darkmode footer {
+  background-color: rgb(0, 0, 0);
+  color: rgb(154, 154, 154);
+}
+/* Elements that control the dark & light modes exist above */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 160%;
+  padding: 20px;
+}
+
+.appName  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 20px;
+  flex-direction: row;
+  flex: 1;
+}
+
+.herotext {
+  padding-left: 10%;
+  padding-right: 10%;
+  font-size: 140%;
+}
+
+.toggleswitch {
+  width: 80px;
+  margin: 0 auto; /* Center horizontally */
+  
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+/* Elements for the Dog headshot img exist below */
+.icon {
+  width: 50px;
+  height: 50px;
+  margin-right: 2px;
+}
+/* Elements for the Dog headshot img exist above */
+
+/* Elements for the sitting Dog img exist below */
+.footerImage {
+  width: 40%;
+  height: 40%;
+  margin-top: 20%;
+  margin-bottom: 20%;
+  height: 100%;
+}
+
+.ftimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerImage img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-fit: center;
+  /* Elements for the sitting Dog img exist above */
+}
+
+.darkIcon {
+  filter: invert(1);
+}
+
+.sidebarIcon  {
+  width: 30px;
+  height: 25px;
+  justify-content: right;
+}
+
+.sidebar  {
+  width: 250px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  transition: transform 0.3s ease;
+  transform: translateX(-100%);
+}
+
+.sidebar.open {
+  transform: translateX(0);
+}
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+p {
+  text-align: center;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 7%;
+  background-color: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-container {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  max-width: max-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] {
+  width: 50vw;
+  max-width: 400px;
+  padding: 8% 18%;
+  padding-left: 10%;
+  border: 2px solid #ddd;
+  border-radius: 20px;
+  outline: none;
+  font-size: 100%;
+}
+
+button {
+  width: 120%;
+  padding: 10% 20%;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-size: 100%;
+}
+
+.list-container {
+  margin-top: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 150%;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 13px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.footer {
+  position: fixed;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-size: 100%;
+  border-top: 1px solid #575454;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fttxt  {
+  margin-top: 170px;
+  padding-right: 40px;
+}
+
+ /* Elements for the media query exist below */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 5%;
+  }
+
+  .header {
+    font-size: 120%;
+    display: flex;
+  }
+
+  .herotext {
+    font-size: 120%;
+  }
+
+
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 1px;
+  }
+
+  .footerImage {
+    width: 80%;
+    height: 80%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  button {
+    width: 120%;
+    padding: 8% 10%;
+    font-size: 90%;
+  }
+
+  .list-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 120%;
+  }
+}
+ /* Elements for the media query exist above */
